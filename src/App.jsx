@@ -1,4 +1,5 @@
 import CreateUser from "./components/CreateUser";
+import DeleteUser from "./components/DeleteUser";
 import UpdateUser from "./components/UpdateUser";
 import User from "./components/User";
 import UserOnclick from "./components/UserOnclick";
@@ -11,7 +12,8 @@ function App() {
       {/* <User /> */}
       {/* <UserOnclick /> */}
       {/* <CreateUser /> */}
-      <UpdateUser />
+      {/* <UpdateUser /> */}
+      <DeleteUser />
     </>
   );
 }
