@@ -19,4 +19,15 @@ const CREATE_USER = gql`
   }
 `;
 
-export { CREATE_USER };
+const UPDATE_USER = gql`
+  mutation updateUser($id: ID!, $name: String!, $email: String!) {
+    updateUser(id: $id, input: { name: $name, email: $email }) {
+      id
+      name
+      email
+      phone
+    }
+  }
+`;
+
+export { CREATE_USER, UPDATE_USER };
